@@ -1,6 +1,14 @@
-# Super POM
+## Contributing
 
-[![Build Status](https://travis-ci.org/CJSCommonPlatform/maven-super-pom.svg?branch=master)](https://travis-ci.org/CJSCommonPlatform/maven-super-pom)
+We use pre-commit hooks for validating the terraform format and maintaining the documentation automatically.
+Install it with:
 
-The top level Maven POM for all Common Platform projects. It defines information such as the
-organisation properties and source encoding that should be consistent across all projects.
+```shell
+$ brew install pre-commit
+$ pre-commit install
+```
+
+If you add a new hook make sure to run it against all files:
+```shell
+$ pre-commit run --all-files --show-diff-on-failure
+```
